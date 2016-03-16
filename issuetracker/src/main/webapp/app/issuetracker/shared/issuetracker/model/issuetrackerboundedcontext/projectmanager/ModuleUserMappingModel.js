@@ -1,0 +1,38 @@
+Ext.define('Issuetracker.issuetracker.shared.issuetracker.model.issuetrackerboundedcontext.projectmanager.ModuleUserMappingModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "modUserId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "projectid",
+          "reference": "CreateProject",
+          "defaultValue": ""
+     }, {
+          "name": "contactid",
+          "reference": "CoreContacts",
+          "defaultValue": ""
+     }, {
+          "name": "isAdmin",
+          "type": "boolean",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "ProjectModule",
+          "reference": "ProjectModuleModel"
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

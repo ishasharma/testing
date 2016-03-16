@@ -1,0 +1,46 @@
+Ext.define('Issuetracker.issuetracker.shared.issuetracker.model.issuetrackerboundedcontext.issuetracker.IssueAssignmentModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "basketId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "contactid",
+          "reference": "CoreContacts",
+          "defaultValue": ""
+     }, {
+          "name": "issueDate",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "startTime",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "endTime",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "comments",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "IssueWorkflow",
+          "reference": "IssueWorkflowModel"
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

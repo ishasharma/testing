@@ -1,0 +1,31 @@
+Ext.define('Issuetracker.issuetracker.shared.issuetracker.model.issuetrackerboundedcontext.issuetracker.IssueSeverityModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "issueSeverityCode",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "issueSeverityName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "issueSeverityDesc",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

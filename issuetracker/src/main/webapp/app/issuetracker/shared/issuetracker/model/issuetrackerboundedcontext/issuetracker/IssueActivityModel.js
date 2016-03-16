@@ -1,0 +1,43 @@
+Ext.define('Issuetracker.issuetracker.shared.issuetracker.model.issuetrackerboundedcontext.issuetracker.IssueActivityModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "issuestagecode",
+          "reference": "IssueStage",
+          "defaultValue": ""
+     }, {
+          "name": "issuestatuscode",
+          "reference": "IssueStatus",
+          "defaultValue": ""
+     }, {
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "issueActivityCode",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "issueActivityId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "issueActivityName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "issueActivityDesc",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

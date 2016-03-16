@@ -1,0 +1,31 @@
+Ext.define('Issuetracker.issuetracker.shared.issuetracker.model.issuetrackerboundedcontext.projectmanager.WorkflowUserRoleModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "workUserRoleId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "workflowid",
+          "reference": "Workflow",
+          "defaultValue": ""
+     }, {
+          "name": "prjroleid",
+          "reference": "ProjectRoles",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

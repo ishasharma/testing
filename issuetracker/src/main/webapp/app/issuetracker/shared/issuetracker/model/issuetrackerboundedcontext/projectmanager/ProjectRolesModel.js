@@ -1,0 +1,35 @@
+Ext.define('Issuetracker.issuetracker.shared.issuetracker.model.issuetrackerboundedcontext.projectmanager.ProjectRolesModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "prjRoleId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "roleName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "issuevisibilitycode",
+          "reference": "IssueVisibility",
+          "defaultValue": ""
+     }, {
+          "name": "canAssignRole",
+          "type": "boolean",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

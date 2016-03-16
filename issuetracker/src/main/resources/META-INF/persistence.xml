@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+
+	<persistence-unit name="issuetracker" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<properties>
+			<property name="eclipselink.ddl-generation" value="none"/>
+			<property name="eclipselink.logging.level" value="FINEST"/>
+			<property name="eclipselink.weaving" value="false"/>
+			<property name="eclipselink.jdbc.allow-native-sql-queries" value="true"/>
+			<property name="eclipselink.deploy-on-startup" value="true"/>
+
+			<property name="eclipselink.connection-pool.default.initial" value="15"/>
+			<property name="eclipselink.connection-pool.default.min" value="6"/>
+			<property name="eclipselink.connection-pool.default.max" value="10"/>
+
+
+		<property name="eclipselink.dialect" value="org.eclipse.persistence.platform.database.oracle.OraclePlatform"/>
+        <property name="eclipselink.session.customizer" value="issuetracker.app.config.UUIDGenerator"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost-ORACLE:1521:xe"/>
+        <property name="javax.persistence.jdbc.user" value="issuetracker"/>
+        <property name="javax.persistence.jdbc.password" value="issuetracker"/>
+        <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+        </properties>
+	<class>issuetracker.app.shared.authentication.ArtPasswordAlgorithm</class>
+    <class>issuetracker.app.shared.authentication.ArtPasswordPolicy</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.location.Timezone</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.location.Language</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.location.Country</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.location.State</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.location.City</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.location.AddressType</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.location.Address</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.contacts.ContactType</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.contacts.CommunicationGroup</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.contacts.CommunicationType</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.contacts.Gender</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.contacts.Title</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.contacts.CoreContacts</class>
+    <class>issuetracker.app.shared.organizationboundedcontext.contacts.CommunicationData</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authentication.PasswordAlgo</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authentication.PasswordPolicy</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authentication.Question</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authentication.UserAccessLevel</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authentication.UserAccessDomain</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authentication.User</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authentication.Login</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authentication.LoginSession</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authentication.PassRecovery</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authentication.UserData</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authentication.SessionData</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authorization.Roles</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authorization.AppMenus</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authorization.RoleMenuBridge</class>
+    <class>issuetracker.app.shared.aaaboundedcontext.authorization.UserRoleBridge</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.IssueCategory</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.ProjectAccessRights</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.IssueVisibility</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.CreateProject</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.ProjectModule</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.ProjectFeature</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.ProjectUserMapping</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.ModuleUserMapping</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.FeatureUserMapping</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.ProjectRoles</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.RoleUserMapping</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.Workflow</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.WorkflowUserRole</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.FeatureCategory</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.IssueStage</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.IssueStatus</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.IssueActivity</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.IssueSeverity</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.IssuePriority</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.IssueFlag</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.IssueWorkflow</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.IssueHeaders</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.IssueAssignment</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.IssueHistory</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.IssueRelationType</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.AddWatchers</class>
+    <class>issuetracker.app.shared.issuetrackerboundedcontext.issuetracker.IssueRelation</class>
+    </persistence-unit>
+
+</persistence>
