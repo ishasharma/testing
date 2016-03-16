@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+
+	<persistence-unit name="sales1" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<properties>
+			<property name="eclipselink.ddl-generation" value="none"/>
+			<property name="eclipselink.logging.level" value="FINEST"/>
+			<property name="eclipselink.weaving" value="false"/>
+			<property name="eclipselink.jdbc.allow-native-sql-queries" value="true"/>
+			<property name="eclipselink.deploy-on-startup" value="true"/>
+
+			<property name="eclipselink.connection-pool.default.initial" value="15"/>
+			<property name="eclipselink.connection-pool.default.min" value="6"/>
+			<property name="eclipselink.connection-pool.default.max" value="10"/>
+
+
+		<property name="eclipselink.dialect" value="org.eclipse.persistence.platform.database.oracle.OraclePlatform"/>
+        <property name="eclipselink.session.customizer" value="sales.app.config.UUIDGenerator"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost-ORACLE:1521:xe"/>
+        <property name="javax.persistence.jdbc.user" value="sales1"/>
+        <property name="javax.persistence.jdbc.password" value="sales"/>
+        <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+        </properties>
+	<class>sales.app.shared.authentication.ArtPasswordAlgorithm</class>
+    <class>sales.app.shared.authentication.ArtPasswordPolicy</class>
+    <class>sales.app.shared.organizationboundedcontext.location.Timezone</class>
+    <class>sales.app.shared.organizationboundedcontext.location.Language</class>
+    <class>sales.app.shared.organizationboundedcontext.location.Country</class>
+    <class>sales.app.shared.organizationboundedcontext.location.State</class>
+    <class>sales.app.shared.organizationboundedcontext.location.City</class>
+    <class>sales.app.shared.organizationboundedcontext.location.AddressType</class>
+    <class>sales.app.shared.organizationboundedcontext.location.Address</class>
+    <class>sales.app.shared.organizationboundedcontext.contacts.ContactType</class>
+    <class>sales.app.shared.organizationboundedcontext.contacts.CommunicationGroup</class>
+    <class>sales.app.shared.organizationboundedcontext.contacts.CommunicationType</class>
+    <class>sales.app.shared.organizationboundedcontext.contacts.Gender</class>
+    <class>sales.app.shared.organizationboundedcontext.contacts.Title</class>
+    <class>sales.app.shared.organizationboundedcontext.contacts.CoreContacts</class>
+    <class>sales.app.shared.organizationboundedcontext.contacts.CommunicationData</class>
+    <class>sales.app.shared.aaaboundedcontext.authentication.PasswordAlgo</class>
+    <class>sales.app.shared.aaaboundedcontext.authentication.PasswordPolicy</class>
+    <class>sales.app.shared.aaaboundedcontext.authentication.Question</class>
+    <class>sales.app.shared.aaaboundedcontext.authentication.UserAccessLevel</class>
+    <class>sales.app.shared.aaaboundedcontext.authentication.UserAccessDomain</class>
+    <class>sales.app.shared.aaaboundedcontext.authentication.User</class>
+    <class>sales.app.shared.aaaboundedcontext.authentication.Login</class>
+    <class>sales.app.shared.aaaboundedcontext.authentication.LoginSession</class>
+    <class>sales.app.shared.aaaboundedcontext.authentication.PassRecovery</class>
+    <class>sales.app.shared.aaaboundedcontext.authentication.UserData</class>
+    <class>sales.app.shared.aaaboundedcontext.authentication.SessionData</class>
+    <class>sales.app.shared.aaaboundedcontext.authorization.Roles</class>
+    <class>sales.app.shared.aaaboundedcontext.authorization.AppMenus</class>
+    <class>sales.app.shared.aaaboundedcontext.authorization.RoleMenuBridge</class>
+    <class>sales.app.shared.aaaboundedcontext.authorization.UserRoleBridge</class>
+    <class>sales.app.shared.salesboundedcontext.sales.Channel</class>
+    <class>sales.app.shared.salesboundedcontext.sales.Category</class>
+    <class>sales.app.shared.salesboundedcontext.sales.Brand</class>
+    <class>sales.app.shared.salesboundedcontext.sales.Material</class>
+    <class>sales.app.shared.salesboundedcontext.sales.SalesRegion</class>
+    <class>sales.app.shared.salesboundedcontext.sales.Distributor</class>
+    <class>sales.app.shared.salesboundedcontext.sales.Retailer</class>
+    <class>sales.app.shared.salesboundedcontext.sales.SalesData</class>
+    <class>sales.app.shared.salesboundedcontext.sales.CurrentMonth</class>
+    <class>sales.app.shared.salesboundedcontext.sales.UserAccess</class>
+    </persistence-unit>
+
+</persistence>

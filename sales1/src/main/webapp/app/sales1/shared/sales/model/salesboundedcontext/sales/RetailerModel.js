@@ -1,0 +1,31 @@
+Ext.define('Sales1.sales1.shared.sales.model.salesboundedcontext.sales.RetailerModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "retailercode",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "retailername",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "distributorcode",
+          "reference": "Distributor",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
