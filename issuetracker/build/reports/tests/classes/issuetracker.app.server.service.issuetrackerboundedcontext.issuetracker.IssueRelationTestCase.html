@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class issuetracker.app.server.service.issuetrackerboundedcontext.issuetracker.IssueRelationTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class issuetracker.app.server.service.issuetrackerboundedcontext.issuetracker.IssueRelationTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/issuetracker.app.server.service.issuetrackerboundedcontext.issuetracker.html">issuetracker.app.server.service.issuetrackerboundedcontext.issuetracker</a> &gt; IssueRelationTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">8</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.479s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>2.166s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.085s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findByissueId</td>
+<td>0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findByissueRelationId</td>
+<td>0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findByrelationCode</td>
+<td>0.018s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.152s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test5NegativeTesting</td>
+<td>0.008s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[EL Fine]: sql: 2016-03-16 11:46:17.99--ClientSession(2128762111)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Title_M (titleId, titles, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [81437474-D897-4E64-B930-637150E90CA8, YuCWGCHNf43GcPw52rqSRJFyy8y2Pk82fyuFUVduRchXvg1FxE, 1, AAAAA, 2016-03-16 11:46:17.98, null, 2016-03-16 11:46:17.98, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.08--ClientSession(643599865)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Gender_M (genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [1D4CE71B-D71B-4199-89F5-89F04A46812E, kKOhSq5CgYwVz96jeMEUNGboMQe1MzA5EQEUdBIyeaa6rfwrlm, 1, AAAAA, 2016-03-16 11:46:18.065, null, 2016-03-16 11:46:18.065, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.164--ClientSession(1301889088)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Language_M (languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [F69D6EE4-086C-41FD-A73A-3F0CFB0F306B, FC, MOj, Z9pn, 4, YUphz07YdaDzpjLvttPrHyB1L6SDdF1LfurE6h36EMxIHFbJic, 00IVbTWMmEcxFRb2XxoaKfVgFW0gJe1uyqW5AuR0VidQ4KMR3i, 8yf0VboVO0DHGQQvFoMvdu1RINYpWggy8zuVmS8HTYub8aSBVA, G6wXyXFudYYnsCf63xtcHey01Kxe7ZZN, 1, AAAAA, 2016-03-16 11:46:18.146, null, 2016-03-16 11:46:18.146, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.198--ClientSession(625144863)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Timezone_M (timeZoneId, cities, country, gmtLabel, timeZoneLabel, utcdifference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [B36F894A-E9A3-4568-924A-0DDFD73BEA65, LMiYIT90fXeXMullD1wTaEsSEpv5cZadRQEKChpeiw3u60ruB4, vHKXSd8elrW3mBoQc4zDl6PBt0j5pZm2mG0QMtWkHoGdWCukP5, uLusSrDfp7s0ZQnsodCUjaeBAsR5f2E6EctMhxKhKrT2qEVCUn, KOz2gfFcTj6LUa1b5zaboRV9VCGjJGS7F0Jbf8tTo35NhJxjjd, 2, 1, AAAAA, 2016-03-16 11:46:17.98, null, 2016-03-16 11:46:17.98, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.285--ClientSession(1522420733)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [6DF40E04-294C-455F-915E-BB8F12BE9BCF, ELt5wF22z5Zh4egRR5OgKA3Kog61QqZD, 11, 10, eUB, SKd, oXpYNFDnZZ7PG5qeFd9niGQB7HeHrgCFpp1r9QydkuC4lu6Fq5, xQJJEBudSjCZJdSw19Ei7rpaydcrDaxuqxguUBuCsRgjRWOegD, 9Hb, gR54liObWCuLrqHOfp2pttdcwTezRxPFH39uodNIVqi9nTEbqI, xtOqtCbN9vAiwvTne7ag1MsOfyYAQeWN, 10, 1, AAAAA, 2016-03-16 11:46:18.264, null, 2016-03-16 11:46:18.264, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.362--ClientSession(1742749024)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_State_M (stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [E47BD947-6BA0-4C69-9F9C-CBB22627F60A, 6DF40E04-294C-455F-915E-BB8F12BE9BCF, EMI1oeKH6At1FJAUQremIx8zv3ErYkdyzedCqRHlRPhGsmDnxd, 1, 7, 2, EqDSehQq8DAeXnBqIeOwkAj3UnuDxIJt, MDxxdiEYORuEuN0KNHtUYYvDh7XDcLOs, 4DKV1dX1ZTLYRo7yixB5YkUDNlLGDMrR2V5uk5wEwgc4fNvTw5, BBVuuWPa8mBrxjIhi7J0t6vhDL8vPKTQru15k69KMFNK39z6R6, GIkMx5SzK8m7cSi5Q4gGD395LzU3JLpY2XO49iGGNtUaz5EfQx, 1, AAAAA, 2016-03-16 11:46:18.343, null, 2016-03-16 11:46:18.343, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.424--ClientSession(1116759994)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_City_M (cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [64DF27BD-B211-4860-AD1B-DCC5EB90C062, 2, JUSZt2MH6jPeklVDvyltVCM0cZkcyyBJ, iXWhQuUbWOCjNiSyplJcvZchYiOJZtAJV7oWjeX2HwhRGOQyKl, tyihsMLNwt1FrAR8lvnFh9bS4I2TnpzFFLFWDadn9Br2ynFk14, 1, 10, rfdFLNTAxSLUyoKEiPJwRaH3QVgNByqse6d1usYXO64HJ8IQuO, 6DF40E04-294C-455F-915E-BB8F12BE9BCF, E47BD947-6BA0-4C69-9F9C-CBB22627F60A, 1, AAAAA, 2016-03-16 11:46:18.343, null, 2016-03-16 11:46:18.343, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.596--ClientSession(2015742510)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressType_M (addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [93D0E813-8085-4518-9642-12DFB9D963EF, 1wLBSyat8vPJHj8q3y2zvCJZ9wJsbuxJZJD9Uiw9Cn3ebDyixu, K7Co11pjTNpmRHRIXa33Zdk9V1Sm0ubaJqXUmEcBXGZ6JPC9UM, 3Qt1nW94jseEAfdMIb3iJijdUaLtUhi0kwWWnzGvehDCYYvvpY, 1, AAAAA, 2016-03-16 11:46:18.58, null, 2016-03-16 11:46:18.58, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.635--ClientSession(579012720)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationGroup_M (commGroupId, commGroupDescription, commGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [A5B4EDBB-2131-4A8C-B94F-B3BD7227EF7B, sMtKiSrUk8tn5hP64rCPadFMukn5647o6e06j0cAUjoS6OBDur, xqK2iEQey1XpqZkYxVvlMgIX1krSimbaLEt1PtTPeEnG4Cq6sT, 1, AAAAA, 2016-03-16 11:46:18.622, null, 2016-03-16 11:46:18.622, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.669--ClientSession(28033893)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationType_M (commType, commGroupId, commTypeDescription, commTypeName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [65F14375-9A0B-43AA-A55A-893DDB2C92CF, A5B4EDBB-2131-4A8C-B94F-B3BD7227EF7B, HKP5kw5JZ5ZoUHdEBNQUodLWnXMPxMWo3aGunm0r4HVfLXATka, C0JwOoj4uCy8M1CxgMPoQXfoiHGIOznQp8CPu8qTOq1tELd8qx, 1, AAAAA, 2016-03-16 11:46:18.652, null, 2016-03-16 11:46:18.652, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.769--ClientSession(621379052)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT timeZoneId FROM ast_Timezone_M WHERE (timeZoneId = ?)
+	bind =&gt; [B36F894A-E9A3-4568-924A-0DDFD73BEA65]
+[EL Fine]: sql: 2016-03-16 11:46:18.77--ClientSession(621379052)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CoreContacts_T (contactId, age, approximateDOB, dateofbirth, emailId, firstName, genderId, lastName, middleName, nativeFirstName, nativeLanguageCode, nativeLastName, nativeMiddleName, nativeTitle, phoneNumber, titleId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, timeZoneId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [E56FDAE0-C22E-4809-99F9-70A508B4D667, 43, 2016-03-16 11:31:35.382, 2016-03-16 11:31:35.498, NHFumS3F1u78GKe3aRj7Tlp4QCtxEL2zR35JHmBfT141KAyijR, kuW5BIbZwP3dcBZ8vHjiDQpdfFLpRhPndIPstm8iMXjN2tZVy2, 1D4CE71B-D71B-4199-89F5-89F04A46812E, odFtTHRridtiuljPFvYeTuboItnr77b07qK2ZvS7U0AVunBlq7, 5eOVsh9lMCNJK0BeHKNSzVyBhm2fRHQ5VrhapiJVKDKVBmQkwI, 06Yudcm9PVeV8rSiII7x4dDrkosMEeRm7DY0Ok1wNfa9ekKqZ2, F69D6EE4-086C-41FD-A73A-3F0CFB0F306B, 8f7GXkqTquR3PiCE9ZX1pV6G0RGM7TKYFZNlvrntmSi198qLEd, v4bxIKmNavT6ONj76XBIa8Ibr3hMPj9RDrysROlVqjDQu8t533, TgbJ6nqecrhFkTWOxO42vqIUGS6yTFtRI1eq2zorr9GbiCzQY5, uEN4HZxYMDBBVpc8Ggey, 81437474-D897-4E64-B930-637150E90CA8, 1, AAAAA, 2016-03-16 11:46:17.98, null, 2016-03-16 11:46:17.98, 1, 51000, B36F894A-E9A3-4568-924A-0DDFD73BEA65]
+[EL Fine]: sql: 2016-03-16 11:46:18.772--ClientSession(621379052)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationData_TP (commDataId, commData, commGroupId, commType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [4C95EF4E-090E-411D-A022-237A3F3B35CA, PuNUT1tCA8enAhyoelKNMNxeo1TnUBnySgPc29swaSNoE51bRI, A5B4EDBB-2131-4A8C-B94F-B3BD7227EF7B, 65F14375-9A0B-43AA-A55A-893DDB2C92CF, 1, AAAAA, 2016-03-16 11:46:18.622, null, 2016-03-16 11:46:18.622, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.773--ClientSession(621379052)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Address_T (addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [0CEF339A-4458-4473-A51F-CEC9374593ED, YHyfB8M7jeG7gYQkzfCeRTbuEbCdmsgxeQb79bkuPtiOcM9Qpu, Gd3KpCOUW3Gqurh00w5XZNwrsDar2OVzlYyB8y4NVZTmksBfN2, Q910fO3s7uBO39SUQQLPzyo47RytI0Ew09YWzi91D2dGghkYkQ, ayB1MC2YDUs, 93D0E813-8085-4518-9642-12DFB9D963EF, 64DF27BD-B211-4860-AD1B-DCC5EB90C062, 6DF40E04-294C-455F-915E-BB8F12BE9BCF, be06XFcJrdpUOX1IZwcCAsB3fcthVKUM1x9IiW07IVpPYNpfOL, 6BjCOot3oAVt5ex61nXDx73yT7tpPcZwXUG7xT4yNF9DEBhCcL, E47BD947-6BA0-4C69-9F9C-CBB22627F60A, 1, 8ea4HN, AAAAA, 2016-03-16 11:46:18.264, null, 2016-03-16 11:46:18.264, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.775--ClientSession(621379052)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressMap_B (addressId, contactId) VALUES (?, ?)
+	bind =&gt; [0CEF339A-4458-4473-A51F-CEC9374593ED, E56FDAE0-C22E-4809-99F9-70A508B4D667]
+[EL Fine]: sql: 2016-03-16 11:46:18.776--ClientSession(621379052)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CommunicationMap_B (commDataId, contactId) VALUES (?, ?)
+	bind =&gt; [4C95EF4E-090E-411D-A022-237A3F3B35CA, E56FDAE0-C22E-4809-99F9-70A508B4D667]
+[EL Fine]: sql: 2016-03-16 11:46:18.909--ClientSession(753078301)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_ProjectAccessRights_M (projectAccessCode, projectAccessDesc, projectAccessName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [048CDB39-8163-4DD3-80B9-54D3161AE42B, VOjkHZSu2ydLOriX66viS9t5NsvrkXdoA6qajVrw1VSy0GDsqt, il4iStY0Yvf6rytQzRYFAurTCPnbfQA6WxhJ31js7022gly34a, 1, AAAAA, 2016-03-16 11:46:18.883, null, 2016-03-16 11:46:18.883, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.991--ClientSession(721585887)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_CreateProject_T (projectId, build, dateOfCreation, projectAccessCode, projectDescription, projectName, projectShortName, projectURL, version, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [7F2623B5-93EA-42FE-9F41-28173280972A, eBCbiMibWeNdCvU3pRtXV5W4iCr4vrK8hF0YAFnbXhjiynZ1AG, 1970-01-02, 048CDB39-8163-4DD3-80B9-54D3161AE42B, 6DqiUKOlOKZuhNO60b5QIyETg5pcMKOfIEsRukjElalVonH3kQ, RXAzul3BFJT3ecL8owNq8FGda0WPMh8NyFZnPADlpeDMWkh6fD, fzds6o6fl3VZppqMCHuUBSuPsGdsRkOxZuot6gAxf6MXQPpcmZ, U60xZBFgnfcQk5ji7WixjYqTjtDeRsSc6Izp4V5D3WvsYOkvy0, lOgqgtTmP0Gu5S65YeOom8YuNFyArxIbPFV4eCM4R9OD6KG8Am, 1, AAAAA, 2016-03-16 11:46:18.883, null, 2016-03-16 11:46:18.883, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:18.992--ClientSession(721585887)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_ProjectUserMapping_TP (prjUserId, contactId, isAdmin, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, projectId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [723C5D89-2EA8-4D52-B207-92AE834F8B88, E56FDAE0-C22E-4809-99F9-70A508B4D667, true, 1, AAAAA, 2016-03-16 11:46:18.973, null, 2016-03-16 11:46:18.973, 1, 51000, 7F2623B5-93EA-42FE-9F41-28173280972A]
+[EL Fine]: sql: 2016-03-16 11:46:19.032--ClientSession(534499339)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_ProjectModule_T (moduleId, build, dateOfCreation, moduleDescription, moduleName, moduleShortName, projectId, version, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [1220F0BC-10D4-40D2-BF2B-12C0AB6EC1F1, SDETVn6W2kAGP7ao6sytCPxM9VEJguFACpfMtIX9l4emNaHmnG, 1970-01-02, moF4njWPf3OYDNBWkOdIjVM5JpdjNbYSOZW9cSWvgPQlWV7BPK, pexviwUr09gHz8cQy0HlvV5FQjJ5AW3P4DevmHuVwk3UhOZgJw, UuO4tSCSZ98n7VrRhZL3FLE4DD8ei3PCIvBCzd8hkAtEjR1nWu, 7F2623B5-93EA-42FE-9F41-28173280972A, d7os0kNcPYQzo0MOLK5Sv7kGiWtPhIwxQNNRYXrilNrHtAwcpv, 1, AAAAA, 2016-03-16 11:46:18.883, null, 2016-03-16 11:46:18.883, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:19.033--ClientSession(534499339)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_ModuleUserMapping_TP (modUserId, contactId, isAdmin, projectId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, moduleId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [5FEEB9DA-F57F-44E6-804E-424DA42B7F27, E56FDAE0-C22E-4809-99F9-70A508B4D667, true, 7F2623B5-93EA-42FE-9F41-28173280972A, 1, AAAAA, 2016-03-16 11:46:19.012, null, 2016-03-16 11:46:19.012, 1, 51000, 1220F0BC-10D4-40D2-BF2B-12C0AB6EC1F1]
+[EL Fine]: sql: 2016-03-16 11:46:19.122--ClientSession(1418450819)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_ProjectFeature_T (featureId, build, dateOfCreation, featureDescription, featureName, featureShortName, moduleId, projectId, version, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [4AB8404C-1DDC-4398-80ED-D92F2CEDB9F2, 3, 1970-01-02, IyLJtMXij9KkkD51QVaN4bJPWkF1tnNbn6L4xxe8PclVlMlF4q, 5E9R1vg8HQt8r6vHov8OL3I3PWFcxEme2fUSe2slQocteopQwh, xDUccCmVr6kTNHTuqquFZn0y9jVHH2C3VgVbQvD6LIT06yq36y, 1220F0BC-10D4-40D2-BF2B-12C0AB6EC1F1, 7F2623B5-93EA-42FE-9F41-28173280972A, 10, 1, AAAAA, 2016-03-16 11:46:18.883, null, 2016-03-16 11:46:18.883, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:19.124--ClientSession(1418450819)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_FeatureUserMapping_TP (feaUserId, contactId, isAdmin, moduleId, projectId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, featureId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [32744F41-EA04-4769-AF85-CAF934D1395C, E56FDAE0-C22E-4809-99F9-70A508B4D667, true, 1220F0BC-10D4-40D2-BF2B-12C0AB6EC1F1, 7F2623B5-93EA-42FE-9F41-28173280972A, 1, AAAAA, 2016-03-16 11:46:19.098, null, 2016-03-16 11:46:19.098, 1, 51000, 4AB8404C-1DDC-4398-80ED-D92F2CEDB9F2]
+[EL Fine]: sql: 2016-03-16 11:46:19.227--ClientSession(1940665115)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueSeverity_M (issueSeverityCode, issueSeverityDesc, issueSeverityName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [C1BBA557-8FFE-45BD-A5AE-468B505A4599, 3OxtqFkeqoCOMGF0wzBdeP3WJJq2CVai5u2bDweVfXjSKkwv9j, uVHlds6KBbaCNGj9FOlsyuSvP3cUON8zhzdUwJMeLept2dkeFB, 1, AAAAA, 2016-03-16 11:46:19.21, null, 2016-03-16 11:46:19.21, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:19.299--ClientSession(675591959)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueFlag_M (issueFlagCode, issueFlagDesc, issueFlagName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [4D706F95-764E-44B1-AC1A-E3AD05556DF9, Yscwp0f1ljigOjYT2NeTPXUGkIA2Kh34iqrJo2AHNCKQvnoVjG, Q1sGA7b0k4VkuRuUG8Weq60unIr2ZL6I6t6UNq5hw5FUmq8MYB, 1, AAAAA, 2016-03-16 11:46:19.283, null, 2016-03-16 11:46:19.283, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:19.329--ClientSession(1743636367)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueCategory_M (issueCategoryCode, issueCategoryDesc, issueCategoryName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [A240B3B9-832F-4876-903E-D51DB7200EA0, 0NY2QNt6wlOiWOkqYNQ7PvgSrgvdirQFrBPakFD6rGvzV0g1r4, aUb7cAcYqk5PEVqQ1GspF3anFRRWS8idb1TCMFTKzqgsOBhmfO, 1, AAAAA, 2016-03-16 11:46:19.313, null, 2016-03-16 11:46:19.313, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:19.405--ClientSession(425765705)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueStage_M (issueStageCode, issueStageDesc, issueStageId, issueStageName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [A523C06E-5090-4E3C-BABB-32E6E102478A, hGqMfmxQ7JGNzoVL4olMKziY0nLF1dJ20MTmhchjX8TUqO1INA, tFj3sBv5B7YICkJZ6NtYbE8pKKoVUSeT2xKdlrCnxa5zFBPLx2, 3wJhBkSKB8HOVL3jkFxMRHEQ0vsW5yShmJTGsCZk7jkno8l3c7, 1, AAAAA, 2016-03-16 11:46:19.392, null, 2016-03-16 11:46:19.392, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:19.544--ClientSession(1578797725)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueStatus_M (issueStatusCode, issueStageCode, issueStatusDesc, issueStatusId, issueStatusName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [5A25F61B-9259-4ADA-94A8-D64432A4C8B6, A523C06E-5090-4E3C-BABB-32E6E102478A, wQVPDl7kwJtSjaBAl4OtxTMC372Ay0s12zDyB2xbHt19O4ommG, &quot;obABmzKXXTE8OQXq5MyrlPJZ4FdLLhbzIezxKxQhoYq3OQVrPm&quot;, YLKMDMu2x8zoKbkoHvcwinLm7Jl7pMepnSvNUjeW413psWQfip, 1, AAAAA, 2016-03-16 11:46:19.459, null, 2016-03-16 11:46:19.459, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:19.703--ClientSession(2138980241)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueActivity_M (issueActivityCode, issueActivityDesc, issueActivityId, issueActivityName, issueStageCode, issueStatusCode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [9AAB43B0-171D-4E41-81F5-7EAB9167BEC9, H5Jnu3WhBdCwOuvPRZujPmFGBtnzDliDYLv2zRzdXx8sNCVJQ2, &quot;QXwoDdzsPEudOJvQmkVY5gyj6YuhsaOJKnLaF0DuYGe6icFtvQ&quot;, vCi8DFVTPaCMUnjuvGT3KLfp0YHyqsmM3EmNLibtbBp7Y9ysLL, A523C06E-5090-4E3C-BABB-32E6E102478A, 5A25F61B-9259-4ADA-94A8-D64432A4C8B6, 1, AAAAA, 2016-03-16 11:46:19.459, null, 2016-03-16 11:46:19.459, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:19.783--ClientSession(286174238)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssuePriority_M (issuePriorityCode, issuePriorityDesc, issuePriorityName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [8CB8E052-4452-4AC5-914C-1B9A9B54D3A0, e8MwPA8rZdaKfZyXclJYAvvZtSUZxACQplnKgAUvlA3yx3un7w, vCoKDrxbO8ZyX49jbyOANNOnSGFcqptBXW0AF8FNPs8MWzOl2V, 1, AAAAA, 2016-03-16 11:46:19.768, null, 2016-03-16 11:46:19.768, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:19.818--ClientSession(1711710862)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_FeatureCategory_M (featureCategoryCode, featureCategoryDesc, featureCategoryName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [2746ED4C-66B4-4E32-8722-8AAF960DCA9A, ilzo2nYZDI5QeCMikk8Jdwf3KDcBsrQiy4Lu0yajsSZ2retI3i, GbxgnIZyCk4tngKa2idSu4LVQO03nT1DSxxUC2QVmxXEiLcXVI, 1, AAAAA, 2016-03-16 11:46:19.801, null, 2016-03-16 11:46:19.801, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:19.856--ClientSession(1363046706)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueWorkflow_T (issueId, browser, creatorContactId, dateCreated, featureId, issueDescription, issueTitle, moduleId, OS, projectId, stepsToReproduce, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [F5B6D421-4510-4183-B8AF-552774AC5F2B, xtEr29eb0BXLwyaSHWG9FhGXn3go4y2kiv7ylTWGvyTE3qekyD, E56FDAE0-C22E-4809-99F9-70A508B4D667, 1970-01-02, 4AB8404C-1DDC-4398-80ED-D92F2CEDB9F2, yRiRH8aVyCjr1UkHGwysho6DhPPv020N0Kpy6v5VfFK0yjaRj8, wPOoaQYKvvW18pdyHzt1o3hovLsa6OcFgdc9SqTJae3Pin9NPJ, 1220F0BC-10D4-40D2-BF2B-12C0AB6EC1F1, 92aUjn6ilCUB6SpsfbxZXXDR28HT6FCdJ2riS6b39jHq9IqMcE, 7F2623B5-93EA-42FE-9F41-28173280972A, QUfhFRNPFVZQ5MmodwF8AIlt1fKIEUpYeGg5kQImgczMCxxC1G, 1, AAAAA, 2016-03-16 11:46:17.98, null, 2016-03-16 11:46:17.98, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:19.857--ClientSession(1363046706)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddWatchers_TP (watchId, contactId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, issueId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [D07D30D9-7DEE-4777-9987-D25CA4C9C499, E56FDAE0-C22E-4809-99F9-70A508B4D667, 1, AAAAA, 2016-03-16 11:46:19.21, null, 2016-03-16 11:46:19.21, 1, 51000, F5B6D421-4510-4183-B8AF-552774AC5F2B]
+[EL Fine]: sql: 2016-03-16 11:46:19.858--ClientSession(1363046706)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueAssignment_TP (basketId, comments, contactId, endTime, issueDate, startTime, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, issueId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [FEF8DC1A-92E5-4D03-A99F-2F8222ADFD23, rcmQ7RUkOd04e4hB0R4MnQyuG7tgCE8bEUGDYd0pICTZkbWWyB, E56FDAE0-C22E-4809-99F9-70A508B4D667, 1970-01-02, 1970-01-02, 1970-01-02, 1, AAAAA, 2016-03-16 11:46:19.21, null, 2016-03-16 11:46:19.21, 1, 51000, F5B6D421-4510-4183-B8AF-552774AC5F2B]
+[EL Fine]: sql: 2016-03-16 11:46:19.859--ClientSession(1363046706)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueHeaders_TP (issuePk, comments, effortEstimate, featureCategoryCode, issueActivityCode, issueCategoryCode, issueFlagCode, issuePriorityCode, issueSeverityCode, issueStageCode, issueStatusCode, lastUpdated, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, issueId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [F951E446-A2DC-4CA0-AA8A-B0F9A7F25EDC, yaMFFCF4vnkDqgEon7pQzCZtLUqs3510ZtDGM0T6OxoqPgNFpV, 1970-01-02, 2746ED4C-66B4-4E32-8722-8AAF960DCA9A, 9AAB43B0-171D-4E41-81F5-7EAB9167BEC9, A240B3B9-832F-4876-903E-D51DB7200EA0, 4D706F95-764E-44B1-AC1A-E3AD05556DF9, 8CB8E052-4452-4AC5-914C-1B9A9B54D3A0, C1BBA557-8FFE-45BD-A5AE-468B505A4599, A523C06E-5090-4E3C-BABB-32E6E102478A, 5A25F61B-9259-4ADA-94A8-D64432A4C8B6, 1970-01-02, 1, AAAAA, 2016-03-16 11:46:19.21, null, 2016-03-16 11:46:19.21, 1, 51000, F5B6D421-4510-4183-B8AF-552774AC5F2B]
+[EL Fine]: sql: 2016-03-16 11:46:19.971--ClientSession(863531059)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueRelationType_M (relationCode, relationDesc, relationName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [CC4D75B6-B2C1-4849-9831-5758E5DFA99B, cVTWVMGU7w6HYSMJknD02HzT9uPquNbEemMFLcd1LYq0HoROal, 76epWGApNP2RkBZAqWfpC2LUY5tkwhl5YDPoHYdpT1Z41OyqjX, 1, AAAAA, 2016-03-16 11:46:19.916, null, 2016-03-16 11:46:19.916, 1, 51000]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-16 11:46:20.093--ClientSession(1680393153)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueRelation_M (relationId, issueId, issueRelationId, relationCode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [9E340DCC-FAB0-413E-8EDB-EDFB92C76AF4, F5B6D421-4510-4183-B8AF-552774AC5F2B, F5B6D421-4510-4183-B8AF-552774AC5F2B, CC4D75B6-B2C1-4849-9831-5758E5DFA99B, 1, AAAAA, 2016-03-16 11:46:20.044, null, 2016-03-16 11:46:20.044, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:20.136--ClientSession(49785993)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT relationId, issueId, issueRelationId, relationCode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_IssueRelation_M WHERE ((activeStatus = ?) AND (relationId = ?))
+	bind =&gt; [1, 9E340DCC-FAB0-413E-8EDB-EDFB92C76AF4]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-16 11:46:20.142--ClientSession(1262925011)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT relationId, issueId, issueRelationId, relationCode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_IssueRelation_M WHERE (relationId = ?)
+	bind =&gt; [9E340DCC-FAB0-413E-8EDB-EDFB92C76AF4]
+[EL Fine]: sql: 2016-03-16 11:46:20.145--ClientSession(1262925011)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--UPDATE ast_IssueRelation_M SET updatedBy = ?, versionId = ? WHERE ((relationId = ?) AND (versionId = ?))
+	bind =&gt; [AAAAA, 2, 9E340DCC-FAB0-413E-8EDB-EDFB92C76AF4, 1]
+[EL Fine]: sql: 2016-03-16 11:46:20.224--ClientSession(1061957099)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT relationId, issueId, issueRelationId, relationCode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_IssueRelation_M WHERE ((activeStatus = ?) AND (relationId = ?))
+	bind =&gt; [1, 9E340DCC-FAB0-413E-8EDB-EDFB92C76AF4]
+[EL Fine]: sql: 2016-03-16 11:46:20.236--ClientSession(624303152)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT relationId, issueId, issueRelationId, relationCode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_IssueRelation_M WHERE ((activeStatus = ?) AND (issueId = ?))
+	bind =&gt; [1, F5B6D421-4510-4183-B8AF-552774AC5F2B]
+[EL Fine]: sql: 2016-03-16 11:46:20.253--ClientSession(73544945)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT relationId, issueId, issueRelationId, relationCode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_IssueRelation_M WHERE ((activeStatus = ?) AND (issueRelationId = ?))
+	bind =&gt; [1, F5B6D421-4510-4183-B8AF-552774AC5F2B]
+[EL Fine]: sql: 2016-03-16 11:46:20.272--ClientSession(768914038)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT relationId, issueId, issueRelationId, relationCode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_IssueRelation_M WHERE ((activeStatus = ?) AND (relationCode = ?))
+	bind =&gt; [1, CC4D75B6-B2C1-4849-9831-5758E5DFA99B]
+[EL Fine]: sql: 2016-03-16 11:46:20.296--ClientSession(231611889)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT relationId, issueId, issueRelationId, relationCode, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_IssueRelation_M WHERE (relationId = ?)
+	bind =&gt; [9E340DCC-FAB0-413E-8EDB-EDFB92C76AF4]
+[EL Fine]: sql: 2016-03-16 11:46:20.297--ClientSession(231611889)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_IssueRelation_M WHERE ((relationId = ?) AND (versionId = ?))
+	bind =&gt; [9E340DCC-FAB0-413E-8EDB-EDFB92C76AF4, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Mar 16, 2016 11:46:58 AM</p>
+</div>
+</div>
+</body>
+</html>

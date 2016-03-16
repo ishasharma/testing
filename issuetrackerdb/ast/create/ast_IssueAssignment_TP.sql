@@ -1,0 +1,3 @@
+CREATE TABLE ast_IssueAssignment_TP ( basketId VARCHAR2(64)  NOT NULL, issueId VARCHAR2(64)  NOT NULL, contactId VARCHAR2(64)  NOT NULL, issueDate DATE  NOT NULL, startTime DATE  NOT NULL, endTime DATE  DEFAULT NULL, comments VARCHAR2(1024)  NOT NULL, createdBy VARCHAR2(64)  DEFAULT '-1', createdDate TIMESTAMP  DEFAULT '11-nov-01', updatedBy VARCHAR2(64)  DEFAULT '-1', updatedDate TIMESTAMP  DEFAULT '11-nov-01', versionId NUMBER(11)  DEFAULT '-1', activeStatus NUMBER(1)  DEFAULT '1', txnAccessCode NUMBER  DEFAULT NULL, PRIMARY KEY (basketId));
+
+exit;

@@ -1,0 +1,3 @@
+CREATE TABLE ast_ProjectFeature_T ( featureId VARCHAR2(64)  NOT NULL, moduleId VARCHAR2(64)  NOT NULL, projectId VARCHAR2(64)  NOT NULL, featureName VARCHAR2(128)  NOT NULL, featureShortName VARCHAR2(64)  NOT NULL, featureDescription VARCHAR2(256)  NOT NULL, version NUMBER(11)  NOT NULL, build NUMBER(11)  NOT NULL, dateOfCreation DATE  NOT NULL, createdBy VARCHAR2(64)  DEFAULT '-1', createdDate TIMESTAMP  DEFAULT '11-nov-01', updatedBy VARCHAR2(64)  DEFAULT '-1', updatedDate TIMESTAMP  DEFAULT '11-nov-01', versionId NUMBER(11)  DEFAULT '-1', activeStatus NUMBER(1)  DEFAULT '1', txnAccessCode NUMBER  DEFAULT NULL, PRIMARY KEY (featureId));
+
+exit;

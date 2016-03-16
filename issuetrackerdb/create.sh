@@ -1,0 +1,253 @@
+
+
+
+
+
+ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
+ORACLE_SID=XE
+PATH=$PATH:$ORACLE_HOME/bin:$ORACLE_SID
+export ORACLE_HOME
+export ORACLE_SID
+export PATH
+DB_PATH=/tmp/applifire/db/IMYOEI4KXMNPRVKXSFOAA/6BE6DB6D-9D38-4A34-8DE5-68F3A79FF98C
+ART_CREATE_PATH=/tmp/applifire/db/IMYOEI4KXMNPRVKXSFOAA/6BE6DB6D-9D38-4A34-8DE5-68F3A79FF98C/art/create
+AST_CREATE_PATH=/tmp/applifire/db/IMYOEI4KXMNPRVKXSFOAA/6BE6DB6D-9D38-4A34-8DE5-68F3A79FF98C/ast/create
+APPLFIREUSER=root
+APPLFIREPASSWORD=root
+APPLFIREHOST=localhost
+
+
+
+DB_NAME=issuetracker
+USER=issuetracker
+PASSWORD=issuetracker
+PORT=1521
+HOST=localhost
+
+
+echo 'drop tables starts....'
+sqlplus /nolog @$DB_PATH/drop_db.sql;
+echo 'drop tables ends....'
+
+echo 'create db starts....'
+sqlplus /nolog @$DB_PATH/create_db.sql;
+echo 'create db ends....'
+
+echo 'grant previliges to user starts....'
+sqlplus /nolog @$DB_PATH/grant_previliges.sql;
+echo 'grant previliges to user ends....'
+
+echo 'drop sequence starts....'
+sqlplus $USER/$PASSWORD @$DB_PATH/dropSequence.sql;
+echo 'drop sequence ends....'
+
+echo 'create ART table process starts...'
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_query.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_report_ui.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_component_config.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_log_severity_m.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_log_events_t.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_chart_json.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_chart_category.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_chart_type.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_chart_data_field_json.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_lang_master.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_chart_properties.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_chart_prop_language.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_chart_template.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_report_builder_details.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_log_config_m.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_log_config_attributes.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_log_connector_m.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_log_connector_attributes_m.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/zen_health.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/zen_health_counter.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/zen_health_gauge.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/zen_health_status.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/zen_request_details.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_loginSession.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_session_data.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_user_last_status.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_log_module.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_app_alarm.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_password_algorithm.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_password_policy.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_health_scheduler_config_m.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_health_status_config_m.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/cloud_drive_file_content_type.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/cloud_drive_tags.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/cloud_drive_files.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/cloud_drive_tags_file.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/cloud_drive_file_versions.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/cloud_drive_tag_shared.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/cloud_drive_file_shared.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_external_integration.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_job_details.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_scheduler_details.sql;
+
+sqlplus $USER/$PASSWORD @$ART_CREATE_PATH/art_schedule_config.sql;
+
+echo 'create ART table process ends...'
+
+echo 'create AST table process starts...'
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_Timezone_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_Language_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_Country_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_State_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_City_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_AddressType_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_Address_T.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_ContactType_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_CommunicationGroup_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_CommunicationType_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_Gender_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_Title_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_CoreContacts_T.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_AddressMap_B.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_CommunicationData_TP.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_CommunicationMap_B.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_PasswordAlgo_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_PasswordPolicy_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_Question_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_UserAccessLevel_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_UserAccessDomain_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_User_T.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_Login_T.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_LoginSession_T.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_UserAppState_T.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_PassRecovery_TP.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_UserData_TP.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_SessionData_T.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_Roles_T.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_AppMenus_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_RoleMenuBridge_TP.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_UserRoleBridge_T.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssueCategory_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_ProjectAccessRights_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssueVisibility_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_CreateProject_T.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_ProjectModule_T.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_ProjectFeature_T.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_ProjectUserMapping_TP.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_ModuleUserMapping_TP.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_FeatureUserMapping_TP.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_ProjectRoles_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_RoleUserMapping_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_Workflow_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_WorkflowUserRole_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_FeatureCategory_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssueStage_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssueStatus_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssueActivity_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssueSeverity_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssuePriority_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssueFlag_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssueWorkflow_T.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssueHeaders_TP.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssueAssignment_TP.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssueHistory_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssueRelationType_M.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_AddWatchers_TP.sql; 
+
+sqlplus $USER/$PASSWORD @$AST_CREATE_PATH/ast_IssueRelation_M.sql; 
+
+echo 'create AST table process ends...'
+

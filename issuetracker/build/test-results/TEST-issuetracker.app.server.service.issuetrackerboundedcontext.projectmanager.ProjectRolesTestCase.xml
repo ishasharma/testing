@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.ProjectRolesTestCase" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-03-16T11:46:36" hostname="874d4be5f1eb" time="0.443">
+  <properties/>
+  <testcase name="test1Save" classname="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.ProjectRolesTestCase" time="0.127"/>
+  <testcase name="test2Update" classname="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.ProjectRolesTestCase" time="0.083"/>
+  <testcase name="test3FindById" classname="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.ProjectRolesTestCase" time="0.018"/>
+  <testcase name="test3findByissueVisibilityCode" classname="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.ProjectRolesTestCase" time="0.017"/>
+  <testcase name="test4Delete" classname="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.ProjectRolesTestCase" time="0.071"/>
+  <testcase name="test5NegativeTesting" classname="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.ProjectRolesTestCase" time="0.126"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-03-16 11:46:36.554--ClientSession(1943482851)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueVisibility_M (issueVisibilityCode, issueVisibilityDesc, issueVisibilityName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [2C355FB6-758F-4585-A658-1356C5198188, OHUKr6Itgl4trQGAqBfZfYAa91PljWZrvKIOFG3k37dlLPwLcb, 5hUcIYvXbqrDKskdo6SiyUjLsD58Qxh0ZaoGrD3QYuWeyd8x7x, 1, AAAAA, 2016-03-16 11:46:36.546, null, 2016-03-16 11:46:36.546, 1, 51000]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-16 11:46:36.633--ClientSession(456396101)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_ProjectRoles_M (prjRoleId, canAssignRole, issueVisibilityCode, roleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [9223E80C-93A3-4858-A6A6-E319E33EBAF1, true, 2C355FB6-758F-4585-A658-1356C5198188, KDskQ1Og1Baj6T11aXBXCPJPv9UkTcEsFVz8u28w8w0PS6GW95, 1, AAAAA, 2016-03-16 11:46:36.619, null, 2016-03-16 11:46:36.619, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:36.67--ClientSession(2012437809)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT prjRoleId, canAssignRole, issueVisibilityCode, roleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ProjectRoles_M WHERE ((activeStatus = ?) AND (prjRoleId = ?))
+	bind => [1, 9223E80C-93A3-4858-A6A6-E319E33EBAF1]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-16 11:46:36.676--ClientSession(8815331)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT prjRoleId, canAssignRole, issueVisibilityCode, roleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ProjectRoles_M WHERE (prjRoleId = ?)
+	bind => [9223E80C-93A3-4858-A6A6-E319E33EBAF1]
+[EL Fine]: sql: 2016-03-16 11:46:36.679--ClientSession(8815331)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--UPDATE ast_ProjectRoles_M SET roleName = ?, updatedBy = ?, versionId = ? WHERE ((prjRoleId = ?) AND (versionId = ?))
+	bind => [0rm3f6EzDgVcYzg8iKhVqBA4qghoQrErHNFj5rqbxzq4do2ECL, AAAAA, 2, 9223E80C-93A3-4858-A6A6-E319E33EBAF1, 1]
+[EL Fine]: sql: 2016-03-16 11:46:36.752--ClientSession(1148932639)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT prjRoleId, canAssignRole, issueVisibilityCode, roleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ProjectRoles_M WHERE ((activeStatus = ?) AND (prjRoleId = ?))
+	bind => [1, 9223E80C-93A3-4858-A6A6-E319E33EBAF1]
+[EL Fine]: sql: 2016-03-16 11:46:36.765--ClientSession(1729868143)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT prjRoleId, canAssignRole, issueVisibilityCode, roleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ProjectRoles_M WHERE ((activeStatus = ?) AND (issueVisibilityCode = ?))
+	bind => [1, 2C355FB6-758F-4585-A658-1356C5198188]
+[EL Fine]: sql: 2016-03-16 11:46:36.785--ClientSession(1369515782)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT prjRoleId, canAssignRole, issueVisibilityCode, roleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_ProjectRoles_M WHERE (prjRoleId = ?)
+	bind => [9223E80C-93A3-4858-A6A6-E319E33EBAF1]
+[EL Fine]: sql: 2016-03-16 11:46:36.787--ClientSession(1369515782)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_ProjectRoles_M WHERE ((prjRoleId = ?) AND (versionId = ?))
+	bind => [9223E80C-93A3-4858-A6A6-E319E33EBAF1, 2]
+[EL Fine]: sql: 2016-03-16 11:46:36.86--ClientSession(1335316309)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueVisibility_M (issueVisibilityCode, issueVisibilityDesc, issueVisibilityName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [752EAB5B-7DE2-4B18-8D2C-BB19BF8DC959, OHUKr6Itgl4trQGAqBfZfYAa91PljWZrvKIOFG3k37dlLPwLcb, 5hUcIYvXbqrDKskdo6SiyUjLsD58Qxh0ZaoGrD3QYuWeyd8x7x, 1, AAAAA, 2016-03-16 11:46:36.847, null, 2016-03-16 11:46:36.847, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:36.882--ClientSession(388180112)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueVisibility_M (issueVisibilityCode, issueVisibilityDesc, issueVisibilityName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [13759727-C2C2-4A56-B4F6-6EBF79B40154, OHUKr6Itgl4trQGAqBfZfYAa91PljWZrvKIOFG3k37dlLPwLcb, 5hUcIYvXbqrDKskdo6SiyUjLsD58Qxh0ZaoGrD3QYuWeyd8x7x, 1, AAAAA, 2016-03-16 11:46:36.881, null, 2016-03-16 11:46:36.881, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:36.904--ClientSession(1029260823)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueVisibility_M (issueVisibilityCode, issueVisibilityDesc, issueVisibilityName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [76303433-C367-4C19-AA4B-B8ECE5573B66, OHUKr6Itgl4trQGAqBfZfYAa91PljWZrvKIOFG3k37dlLPwLcb, 5hUcIYvXbqrDKskdo6SiyUjLsD58Qxh0ZaoGrD3QYuWeyd8x7x, 1, AAAAA, 2016-03-16 11:46:36.902, null, 2016-03-16 11:46:36.902, 1, 51000]
+]]></system-out>
+  <system-err><![CDATA[issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.ProjectRoles.roleName may not be null
+com.athena.framework.server.exception.biz.SpartanConstraintViolationException: Exception in validating entity /issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.ProjectRoles.roleName may not be null
+
+	at com.athena.framework.server.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:28)
+	at issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.ProjectRoles.isValid(ProjectRoles.java:163)
+	at issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.ProjectRolesTestCase.validateProjectRoles(ProjectRolesTestCase.java:196)
+	at issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.ProjectRolesTestCase.test5NegativeTesting(ProjectRolesTestCase.java:223)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.GeneratedMethodAccessor121.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.GeneratedMethodAccessor120.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.ProjectRoles.roleName size must be between 0 and 256
+com.athena.framework.server.exception.biz.SpartanConstraintViolationException: Exception in validating entity /issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.ProjectRoles.roleName size must be between 0 and 256
+
+	at com.athena.framework.server.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:28)
+	at issuetracker.app.shared.issuetrackerboundedcontext.projectmanager.ProjectRoles.isValid(ProjectRoles.java:163)
+	at issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.ProjectRolesTestCase.validateProjectRoles(ProjectRolesTestCase.java:194)
+	at issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.ProjectRolesTestCase.test5NegativeTesting(ProjectRolesTestCase.java:228)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.GeneratedMethodAccessor121.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.GeneratedMethodAccessor120.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]></system-err>
+</testsuite>

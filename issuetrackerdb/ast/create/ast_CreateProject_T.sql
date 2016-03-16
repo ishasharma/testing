@@ -1,0 +1,3 @@
+CREATE TABLE ast_CreateProject_T ( projectId VARCHAR2(64)  NOT NULL, projectName VARCHAR2(128)  NOT NULL, projectShortName VARCHAR2(64)  NOT NULL, projectDescription VARCHAR2(1024)  NOT NULL, projectURL VARCHAR2(64)  DEFAULT NULL, projectAccessCode VARCHAR2(64)  NOT NULL, version VARCHAR2(64)  DEFAULT NULL, build VARCHAR2(64)  DEFAULT NULL, dateOfCreation DATE  DEFAULT NULL, createdBy VARCHAR2(64)  DEFAULT '-1', createdDate TIMESTAMP  DEFAULT '11-nov-01', updatedBy VARCHAR2(64)  DEFAULT '-1', updatedDate TIMESTAMP  DEFAULT '11-nov-01', versionId NUMBER(11)  DEFAULT '-1', activeStatus NUMBER(1)  DEFAULT '1', txnAccessCode NUMBER  DEFAULT NULL, PRIMARY KEY (projectId));
+
+exit;

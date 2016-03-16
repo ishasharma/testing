@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.WorkflowUserRoleTestCase" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-03-16T11:46:35" hostname="874d4be5f1eb" time="0.615">
+  <properties/>
+  <testcase name="test1Save" classname="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.WorkflowUserRoleTestCase" time="0.453"/>
+  <testcase name="test2Update" classname="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.WorkflowUserRoleTestCase" time="0.077"/>
+  <testcase name="test3FindById" classname="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.WorkflowUserRoleTestCase" time="0.018"/>
+  <testcase name="test3findByprjRoleId" classname="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.WorkflowUserRoleTestCase" time="0.016"/>
+  <testcase name="test3findByworkflowId" classname="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.WorkflowUserRoleTestCase" time="0.016"/>
+  <testcase name="test4Delete" classname="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.WorkflowUserRoleTestCase" time="0.03"/>
+  <testcase name="test5NegativeTesting" classname="issuetracker.app.server.service.issuetrackerboundedcontext.projectmanager.WorkflowUserRoleTestCase" time="0.004"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-03-16 11:46:35.61--ClientSession(1706738776)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_IssueVisibility_M (issueVisibilityCode, issueVisibilityDesc, issueVisibilityName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [44ECEA3C-57EA-45DF-964D-3093B9E6095E, oj7vvOj8NUDum6URJsfbqZU0jPoKNEmKDe0ImzrkQ7ALtPeS1j, KP7Xplqgi57y0fhqkffdcRMqDY9yghDjOJag064DLNilQGeztb, 1, AAAAA, 2016-03-16 11:46:35.601, null, 2016-03-16 11:46:35.601, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:35.685--ClientSession(209640279)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_ProjectRoles_M (prjRoleId, canAssignRole, issueVisibilityCode, roleName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [34DAE3E6-6CA4-4B83-8692-C32AE8A44BBD, true, 44ECEA3C-57EA-45DF-964D-3093B9E6095E, 1or4Dj66mmB3UoG8IjTQBdRimePOjMIK8BtoYMwTTt8cbYZl4r, 1, AAAAA, 2016-03-16 11:46:35.601, null, 2016-03-16 11:46:35.601, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:35.8--ClientSession(1502642371)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Workflow_M (workflowId, versionId, workflowName, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [8D256728-28AA-4D2E-89E4-631FF91191A6, 1, 8tXGW0luUdDkWKfBCyTqUDyK6eJZUGVgrLfPadSqb173KGIyRB, AAAAA, 2016-03-16 11:46:35.731, null, 2016-03-16 11:46:35.731, 1, 51000]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-03-16 11:46:35.967--ClientSession(2041420805)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_WorkflowUserRole_M (workUserRoleId, prjRoleId, versionId, workflowId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [8F25BAD1-24EB-4BD1-B016-2D0A3C56703E, 34DAE3E6-6CA4-4B83-8692-C32AE8A44BBD, 1, 8D256728-28AA-4D2E-89E4-631FF91191A6, AAAAA, 2016-03-16 11:46:35.906, null, 2016-03-16 11:46:35.906, 1, 51000]
+[EL Fine]: sql: 2016-03-16 11:46:36.051--ClientSession(186666150)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT workUserRoleId, prjRoleId, versionId, workflowId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_WorkflowUserRole_M WHERE ((activeStatus = ?) AND (workUserRoleId = ?))
+	bind => [1, 8F25BAD1-24EB-4BD1-B016-2D0A3C56703E]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-03-16 11:46:36.056--ClientSession(1259427431)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT workUserRoleId, prjRoleId, versionId, workflowId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_WorkflowUserRole_M WHERE (workUserRoleId = ?)
+	bind => [8F25BAD1-24EB-4BD1-B016-2D0A3C56703E]
+[EL Fine]: sql: 2016-03-16 11:46:36.059--ClientSession(1259427431)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--UPDATE ast_WorkflowUserRole_M SET updatedBy = ?, versionId = ? WHERE ((workUserRoleId = ?) AND (versionId = ?))
+	bind => [AAAAA, 2, 8F25BAD1-24EB-4BD1-B016-2D0A3C56703E, 1]
+[EL Fine]: sql: 2016-03-16 11:46:36.13--ClientSession(1486718202)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT workUserRoleId, prjRoleId, versionId, workflowId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_WorkflowUserRole_M WHERE ((activeStatus = ?) AND (workUserRoleId = ?))
+	bind => [1, 8F25BAD1-24EB-4BD1-B016-2D0A3C56703E]
+[EL Fine]: sql: 2016-03-16 11:46:36.144--ClientSession(221748814)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT workUserRoleId, prjRoleId, versionId, workflowId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_WorkflowUserRole_M WHERE ((activeStatus = ?) AND (prjRoleId = ?))
+	bind => [1, 34DAE3E6-6CA4-4B83-8692-C32AE8A44BBD]
+[EL Fine]: sql: 2016-03-16 11:46:36.161--ClientSession(973890568)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT workUserRoleId, prjRoleId, versionId, workflowId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_WorkflowUserRole_M WHERE ((activeStatus = ?) AND (workflowId = ?))
+	bind => [1, 8D256728-28AA-4D2E-89E4-631FF91191A6]
+[EL Fine]: sql: 2016-03-16 11:46:36.178--ClientSession(1335218585)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--SELECT workUserRoleId, prjRoleId, versionId, workflowId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_WorkflowUserRole_M WHERE (workUserRoleId = ?)
+	bind => [8F25BAD1-24EB-4BD1-B016-2D0A3C56703E]
+[EL Fine]: sql: 2016-03-16 11:46:36.18--ClientSession(1335218585)--Connection(1183009156)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_WorkflowUserRole_M WHERE ((workUserRoleId = ?) AND (versionId = ?))
+	bind => [8F25BAD1-24EB-4BD1-B016-2D0A3C56703E, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
